@@ -10,9 +10,9 @@ A simple and efficient command-line budget tracker built in C++. This tool helps
 
   ## 🛠️ **Built With**
   **Language:** C++
-
+## 🧰 How to Use
 1. Clone the Repository
-git clone https://github.com/yourusername/budget-tracker.git
+git clone https://github.com/joselaraj/budget-tracker.git
 cd budget-tracker
 
 2. Compile the Program
