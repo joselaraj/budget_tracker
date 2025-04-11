@@ -79,7 +79,7 @@ void viewBalance(){
     double balance = 0; 
      //create an edge case incase the vector is empty
      if(transactions.empty()){
-        cout << "No balance at this moment.\n"; 
+        cout << "No bal at this moment.\n"; 
     }
 
   //create a for-loop to go through the transactions vector 
