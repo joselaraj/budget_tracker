@@ -38,7 +38,12 @@ void addTransaction(){
     cin.ignore(); 
 
     cout << "Enter the amount: $"; 
-    cin >> t.amount; 
+    cin >> t.amount;
+    //make sure the amount is not less than or equal to zero
+    while(t.amount <= 0){
+        cout << "ERROR.Transaction amount can't be negative.\nEnter the amount: $";
+        cin >> t.amount; 
+    }
 
     cin.ignore(); // clear newline for getline 
 
@@ -72,20 +77,26 @@ void viewTransactions(){
 void viewBalance(){
     //set double veriable of balance to 0
     double balance = 0; 
-    //create a for-loop to go through the transactions vector 
-    for(auto t: transactions){
-        /*create two different cases
-        if the user added an income transaction it will add to the balance 
-        if the user added an expense transaction it will be deducted from the balance
-        */
-
-        if(t.type == "income"){
-            balance += t.amount;
-        }else if(t.type == "expense"){
-            balance -= t.amount;
-        }
-        cout << "Current balance: $" << fixed << setprecision(2) << balance << endl;
+     //create an edge case incase the vector is empty
+     if(transactions.empty()){
+        cout << "No balance at this moment.\n"; 
     }
+
+  //create a for-loop to go through the transactions vector 
+  for(auto t: transactions){
+    /*create two different cases
+    if the user added an income transaction it will add to the balance 
+    if the user added an expense transaction it will be deducted from the balance
+    */
+    if(t.type == "income"){
+        balance += t.amount;
+    }else if(t.type == "expense"){
+        balance -= t.amount;
+    }
+    cout << "Current balance: $" << fixed << setprecision(2) << balance << endl;
+}
+    
+  
 }
 
     //create a function that adds the items into a file 
@@ -122,9 +133,9 @@ int main(){
    int choice; 
 
    bool running = true; 
-
+    //create a menu
    while(running){
-        cout << "\nBudget Tracker Menu\n";
+        cout << "\n\tBudget Tracker Menu\n";
         cout << "1. Add Transaction\n";
         cout << "2. View Transactions\n";
         cout << "3. View Balance\n";
@@ -133,6 +144,7 @@ int main(){
         cout << "6. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice; 
+        cout << "\n"; 
 
         switch (choice) {
             case 1: addTransaction(); break;

@@ -1,2 +1,2 @@
-income,10,cash app
-income,2,cash app
+income,3000.53,paycheck
+expense,642.235,credit card debt
