@@ -1,4 +1,4 @@
-# 💰 ** Command-Line Budget Tracker
+# 💰 **Command-Line Budget Tracker**
 A simple and efficient command-line budget tracker built in C++. This tool helps you keep track of your personal finances by allowing you to add transactions, view your transaction history, check your current balance, and save/load your data from files for future use.
 
 ## 🚀 **Features**
