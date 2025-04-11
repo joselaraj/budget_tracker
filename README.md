@@ -23,3 +23,7 @@ g++ -o budget_tracker main.cpp
 
 Use the Menu
 * Choose options to add transactions, view them, save/load your file, or check your balance.
+
+📷 # Display Program
+
+![image_alt(https://github.com/joselaraj/budget_tracker/blob/93b325d294b91f33df250f214bace906f9741d9a/budget_tracker1.png)
