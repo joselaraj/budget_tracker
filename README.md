@@ -28,3 +28,5 @@ Use the Menu
 
 ![image alt](https://github.com/joselaraj/budget_tracker/blob/93b325d294b91f33df250f214bace906f9741d9a/budget_tracker1.png)
 ![image alt](https://github.com/joselaraj/budget_tracker/blob/03c6af4873993c8c0a1d2aba3e074318a09d2d8f/budget_tracker2.png)
+![image alt](https://github.com/joselaraj/budget_tracker/blob/646b4d882d13275e09870928edae3f89805c8c33/budget_tracker3.png)
+
